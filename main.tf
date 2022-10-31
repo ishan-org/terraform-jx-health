@@ -78,7 +78,7 @@ resource "helm_release" "health-checks-install" {
   chart            = "jx-kh-check"
   namespace        = "jx-git-operator"
   repository       = "https://jenkins-x-charts.github.io/repo"
-  version          = var.jx_kh_check_version
+  version          = "0.0.80"
   create_namespace = true
 
   set {
